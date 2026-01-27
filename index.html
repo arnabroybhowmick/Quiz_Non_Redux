@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="quiz-container">
+            <div class="hidden" id="question-container">
+               <h2 id="question-text"></h2>
+               <!-- Specifying the gaps /space for the options of each question -->
+               <ul id="choices-list" >
+            
+               </ul>
+               <button class="hidden" id="next-btn">Next Question</button>
+            </div>
+            <div class="hidden" id="result-container">
+                <h2 class="" id="score">YOur Score:<span id="score_value"> 
+                   
+                </span></h2>
+                <button class="hidden" id="restart-btn">Restart</button>
+            </div>
+            <button class="hidden" id="start-btn">Start</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
