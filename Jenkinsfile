@@ -1,5 +1,5 @@
 node{
-   def appdir='/var/www/nextjs-app'
+   def appdir='/var/www/reactjs-app'
    stage('Clean Workspace'){
       echo 'Cleaning jenkins workspace'
       deleteDir()
@@ -14,7 +14,7 @@ node{
       echo 'Deploying to EC2'
       sh """
          sudo mkdir -p ${appdir}
-         sudo chown -R
+         sudo chown -R ubuntu:ubuntu /var/www/nextjs-app
          jenkins:jenkins ${appdir}
          rsync -av --delete
          --exclude='.git'
